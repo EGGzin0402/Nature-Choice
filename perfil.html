@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Choice</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+
+    
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid nav-buttons">
+
+            <a class="navbar-brand" href="./index.html">
+                <img src="img/logo-sem-nome.jpg" width="75">
+                <span class="fw-lighter text-uppercase ms-2">Nature Choice</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#Colecoes">Coleções</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#SobreNos">Sobre nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#Eventos">Eventos</a>
+                    </li>
+                </ul>
+                <a class="nav-link active" aria-current="page" href="./perfil.html">
+                    <button class="btn btn-success">Perfil</button>
+                </a>
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">5</span>
+                </button>
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-heart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">3</span>
+                </button>
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Fim Navbar -->
+
+    &nbsp;
+
+    <!-- Perfil -->
+
+    <div class="card" id="cardPerfil">
+        
+        <div class="row m-l-0 m-r-0">
+            <div class="col-sm-4 bg-c-lite-green user-profile align-self-center">
+                <div class="card-block text-center text-white">
+                    <div class="m-b-25">
+                        <img src="img/logo-sem-nome.jpg" width="200">
+                    </div>
+                    <h1 class="">Nome Aqui</h1>
+                    <i class=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i>
+                </div>
+            </div>
+            <div class="col">
+                <div class="d-flex" style="height: 100%;">
+                    <div class="vr"></div>
+                </div>
+            </div>
+            <div class="col-sm-7">
+                <div class="card-block">
+                    <h4 class="">Informação</h4>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h5 class="">Email</h5>
+                            <span class="">rntng@gmail.com</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <h5 class="">Phone</h5>
+                            <span class="">98979989898</span>
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <h4 class="">Medidas</h4>
+
+                    <br>
+
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h5 class="">Busto</h5>
+                            <span class="">105</span>
+                        </div>
+                        <div class="col-sm-3">
+                            <h5 class="">Cintura</h5>
+                            <span class="">80</span>
+                        </div>
+                        <div class="col-sm-3">
+                            <h5 class="">Quadril</h5>
+                            <span class="">108</span>
+                        </div>
+                        <div class="col-sm-3">
+                            <h5 class="">Bíceps</h5>
+                            <span class="">50</span>
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <div class="row">
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-dark">
+                            Editar
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Fim Perfil -->
+
+    <!-- Favoritos -->
+
+    <section class="">
+
+        <div class="px-5">
+
+            <div class="title text-left my-5">
+                <h2 class="position-relative d-inline-block">Favoritos</h2>
+            </div>
+
+            <div class="card favorite-card my-5">
+
+                <div class="row align-items-center">
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 feminino">
+                        <div class="collection-img position-relative">
+                            <img src="img/c_formal_gray_shirt.png" class="w-100 mx-3">
+                            <span class="position-absolute bg-primary d-flex align-items-center justify-content-center">Sale</span>
+                        </div>
+                    </div>
+                    <div class="col text-center">
+                        
+                        <h1 class="text-capitalize my-1">Gray shirt</h1>
+                        <br>
+                        <span class="fw-bold favorite-price">R$ 44,99</span>
+                        <br>
+                        <br>
+
+                        <div class="rating">
+                            <span class="text-primary">
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col">
+
+                        <h3>Categorias</h3>
+
+                        <button type="button" class="btn btn-success m-2">Feminino</button>
+                        <button type="button" class="btn btn-success m-2">Masculino</button>
+                        <button type="button" class="btn btn-success m-2">Bolsas</button>
+                        <button type="button" class="btn btn-success m-2">Plus Size</button>
+
+                    </div>
+
+                    <div class="col-sm-3">
+                        <button class="btn btn-dark">
+                            Adicionar ao carrinho
+                        </button>
+
+                        <button type="button" class="btn m-2 position-absolute top-0 end-0" style="height: 50px; width: 50px;">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                    </div>
+                    
+                </div>
+
+            </div>
+            
+            <div class="card my-5">
+
+                <div class="row align-items-center">
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 feminino">
+                        <div class="collection-img position-relative">
+                            <img src="img/c_formal_gray_shirt.png" class="w-100 mx-3">
+                            <span class="position-absolute bg-primary d-flex align-items-center justify-content-center">Sale</span>
+                        </div>
+                    </div>
+                    <div class="col text-center">
+                        
+                        <h1 class="text-capitalize my-1">Gray shirt</h1>
+                        <br>
+                        <span class="fw-bold favorite-price">R$ 44,99</span>
+                        <br>
+                        <br>
+
+                        <div class="rating">
+                            <span class="text-primary">
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col">
+
+                        <h3>Categorias</h3>
+
+                        <button type="button" class="btn btn-success m-2">Feminino</button>
+                        <button type="button" class="btn btn-success m-2">Masculino</button>
+                        <button type="button" class="btn btn-success m-2">Bolsas</button>
+                        <button type="button" class="btn btn-success m-2">Plus Size</button>
+
+                    </div>
+
+                    <div class="col-sm-3">
+                        <button class="btn btn-dark">
+                            Adicionar ao carrinho
+                        </button>
+
+                        <button type="button" class="btn m-2 position-absolute top-0 end-0" style="height: 50px; width: 50px;">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div class="card my-5">
+
+                <div class="row align-items-center">
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 feminino">
+                        <div class="collection-img position-relative">
+                            <img src="img/c_formal_gray_shirt.png" class="w-100 mx-3">
+                            <span class="position-absolute bg-primary d-flex align-items-center justify-content-center">Sale</span>
+                        </div>
+                    </div>
+                    <div class="col text-center">
+                        
+                        <h1 class="text-capitalize my-1">Gray shirt</h1>
+                        <br>
+                        <span class="fw-bold favorite-price">R$ 44,99</span>
+                        <br>
+                        <br>
+
+                        <div class="rating">
+                            <span class="text-primary">
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col">
+
+                        <h3>Categorias</h3>
+
+                        <button type="button" class="btn btn-success m-2">Feminino</button>
+                        <button type="button" class="btn btn-success m-2">Masculino</button>
+                        <button type="button" class="btn btn-success m-2">Bolsas</button>
+                        <button type="button" class="btn btn-success m-2">Plus Size</button>
+
+                    </div>
+
+                    <div class="col-sm-3">
+                        <button class="btn btn-dark">
+                            Adicionar ao carrinho
+                        </button>
+
+                        <button type="button" class="btn m-2 position-absolute top-0 end-0" style="height: 50px; width: 50px;">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    
+
+    &nbsp;
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

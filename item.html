@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Choice</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+<style>
+
+    .main {
+        background-color: rgba(255, 255, 255, 0.219);
+        backdrop-filter: blur(2px);
+        border-radius: 25px;
+    }
+    .form-group {
+        height: 70px;
+    }
+
+    #overlay {
+        background-color: #fff;
+        height: 550px;
+        width: 600px;
+        position: absolute;
+        transform: translate(0px, -25px);
+        border-radius: 25px;
+        background-image: url("img/c_formal_gray_shirt.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: .5s;
+    }
+
+    @media only screen and (max-width: 600px) {
+        #overlay ,#signUp{
+            display: none;
+        }
+    }
+</style>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid nav-buttons">
+
+            <a class="navbar-brand" href="./index.html">
+                <img src="img/logo-sem-nome.jpg" width="75">
+                <span class="fw-lighter text-uppercase ms-2">Nature Choice</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#Colecoes">Coleções</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#SobreNos">Sobre nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#Eventos">Eventos</a>
+                    </li>
+                </ul>
+                <a class="nav-link active" aria-current="page" href="./perfil.html">
+                    <button class="btn btn-success">Perfil</button>
+                </a>
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">5</span>
+                </button>
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-heart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">3</span>
+                </button>
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container p-4">
+        <div class="row main mt-5">
+
+            <!-- sign up form -->
+            <div class="col-md-6 p-5 " id="personalizar">
+                <h1 class="display-4 text-center ">Personalizar</h1>
+                <div class="d-flex justify-content-center mt-4">
+                    <div class="w-75">
+                        <div class="form-group">
+                            <label for="tecido">Tecido</label>
+                            <select class="form-select" name="tecido" id="tecido">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                            </select>
+                        </div>
+                        <div class="form-group my-4">
+                            <label for="cor">Cor</label>
+                            <select class="form-select" name="cor" id="cor">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                            </select>
+                        </div>
+                        <div class="d-flex justify-content-center mt-5">
+                            <button class="btn btn-success mx-1 links" href="#" id="originalLink">Original</button>
+                            <button class="btn btn-dark mx-1">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Original Form  -->
+            
+            <div class="col-md-6 p-5 " id="original">
+                <h1 class="display-4 text-center ">Gray Shirt</h1>
+                <div class="d-flex justify-content-center mt-4">
+                    <div class="w-75 ">
+                        <div class="text-center">
+                            <div class="rating">
+                                <span class="text-primary">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="text-primary">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="text-primary">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="text-primary">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="text-primary">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </div>
+                            <br>
+                            <br>
+                            <span class="fw-bold">R$ 44,99</span>
+                        </div>
+                        <div class="d-flex justify-content-center mt-5">
+                            <button class="btn btn-success mx-1 links" href="#" id="personalizarLink">Personalizar</button>
+                            <button class="btn btn-dark mx-1">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div  id="overlay">
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+
+        document.getElementById("personalizarLink").addEventListener("click", function () {
+            if (window.innerWidth < 600) {
+                document.getElementById("personalizar").style.display = 'block';
+                document.getElementById("original").style.display = 'none';
+            }
+            else {
+                document.getElementById("overlay").style.transform = 'translate(550px , -25px)';
+            }
+        })
+        document.getElementById("originalLink").addEventListener("click", function () {
+            if (window.innerWidth < 600) {
+                document.getElementById("personalizar").style.display = 'block';
+                document.getElementById("signUp").style.display = 'none';
+            }
+            else {
+                document.getElementById("overlay").style.transform = 'translate(0px , -25px)';
+            }
+        })
+
+
+
+    </script>
+    
+</body>
+</html>
