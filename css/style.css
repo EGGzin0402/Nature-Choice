@@ -41,6 +41,23 @@ body{
     .navbar-item{
         border-bottom: none;
     }
+    #Alta .col{
+        width: 100%;
+    }
+}
+
+@media(max-width: 768px){
+
+    #Alta .col{
+        width: 100%;
+    }
+}
+
+@media(max-width: 576px){
+
+    #cardPerfil .vr{
+        display: none !important;
+    }
 }
 
 /* Title */
