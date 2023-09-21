@@ -223,3 +223,8 @@ a {
     text-decoration: none !important;
     color: var(--bs-dark) !important;
 }
+
+.backgroundSobre{
+    background-image: url("../img/about_us.jpg") !important;
+    background-size: cover !important;
+}

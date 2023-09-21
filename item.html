@@ -27,8 +27,8 @@
 
     #overlay {
         background-color: #fff;
-        height: 550px;
-        width: 600px;
+        height: 80vh;
+        width: 50vw;
         position: absolute;
         transform: translate(0px, -25px);
         border-radius: 25px;
@@ -36,7 +36,20 @@
         background-repeat: no-repeat;
         background-size: cover;
         transition: .5s;
+        z-index: 0;
     }
+    
+    #coracao{
+        top: 20%;
+        right: 5%;
+        z-index: 1;
+        height: 50px;
+        width: 50px;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+    }
+
 
     @media only screen and (max-width: 600px) {
         #overlay ,#signUp{
@@ -91,8 +104,15 @@
         </div>
     </nav>
 
-    <div class="container p-4">
+    <a type="button" class="btn position-absolute" id="coracao">
+        <i class="fa fa-heart"></i>
+    </a>
+
+    <div class="container-fluid p-4">
+        
         <div class="row main mt-5">
+
+            
 
             <!-- sign up form -->
             <div class="col-md-6 p-5 " id="personalizar">
@@ -102,21 +122,33 @@
                         <div class="form-group">
                             <label for="tecido">Tecido</label>
                             <select class="form-select" name="tecido" id="tecido">
-                                <option value="">1</option>
-                                <option value="">2</option>
-                                <option value="">3</option>
-                                <option value="">4</option>
-                                <option value="">5</option>
+                                <option value="">Fibra de Bambû</option>
+                                <option value="">Cânhamo</option>
+                                <option value="">Malha Modal</option>
+                                <option value="">Poliamida</option>
+                                <option value="">Biodegradável</option>
+                                <option value="">Lenpur</option>
+                                <option value="">QMILK </option>
+                                <option value="">Pinátex</option>
+                                <option value="">Fibra de Garrafa</option>
                             </select>
                         </div>
                         <div class="form-group my-4">
                             <label for="cor">Cor</label>
                             <select class="form-select" name="cor" id="cor">
-                                <option value="">1</option>
-                                <option value="">2</option>
-                                <option value="">3</option>
-                                <option value="">4</option>
-                                <option value="">5</option>
+                                <option value="">Vermelho</option>
+                                <option value="">Azul</option>
+                                <option value="">Verde</option>
+                                <option value="">Amarelo</option>
+                                <option value="">Preto</option>
+                            </select>
+                        </div>
+                        <div class="form-group my-4">
+                            <label for="cor">Loja</label>
+                            <select class="form-select" name="cor" id="cor">
+                                <option value="">Endereço 1</option>
+                                <option value="">Endereço 2</option>
+                                <option value="">Endereço 3</option>
                             </select>
                         </div>
                         <div class="d-flex justify-content-center mt-5">
@@ -162,7 +194,7 @@
                     </div>
                 </div>
             </div>
-            <div  id="overlay">
+            <div class="container-fluid" id="overlay">
 
             </div>
         </div>
@@ -182,7 +214,7 @@
                 document.getElementById("original").style.display = 'none';
             }
             else {
-                document.getElementById("overlay").style.transform = 'translate(550px , -25px)';
+                document.getElementById("overlay").style.transform = 'translate(48vw, -25px)';
             }
         })
         document.getElementById("originalLink").addEventListener("click", function () {
